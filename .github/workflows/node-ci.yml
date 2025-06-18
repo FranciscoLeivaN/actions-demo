@@ -23,7 +23,7 @@ jobs:
         run: npm ci
 
       - name: Ejecutar pruebas
-        run: npx jest
-
+        run: npx jest      
+        
       - name: Ver entorno
-        run: echo "Entorno actual: ${{ secrets.NODE_ENV }}"
+        run: 'echo "Entorno actual: ${{ secrets.NODE_ENV }}"'
